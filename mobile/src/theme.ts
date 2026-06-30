@@ -16,5 +16,6 @@ export const FONTS = {
 };
 
 export const GRADIENT = {
-  primary: [COLORS.primaryGradientStart, COLORS.primaryGradientEnd],
+  primary: [COLORS.primaryGradientStart, COLORS.primaryGradientEnd] as const,
 };
+
