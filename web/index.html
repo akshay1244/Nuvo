@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuvo — The First AI That Evolves With You</title>
+  <meta name="description" content="Nuvo is the emergent AI platform that continuously understands, adapts, predicts, and evolves alongside you. The future of personal intelligence." />
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ─── CUSTOM CURSOR ─── -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ─── LOADING SCREEN ─── -->
+  <div class="loader" id="loader">
+    <div class="loader-logo">NUVO</div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+
+  <!-- ─── AMBIENT BACKGROUND ─── -->
+  <div class="ambient-bg">
+    <div class="ambient-orb ambient-orb-1"></div>
+    <div class="ambient-orb ambient-orb-2"></div>
+    <div class="ambient-orb ambient-orb-3"></div>
+  </div>
+
+  <!-- ─── STAR FIELD CANVAS ─── -->
+  <canvas id="starField" style="position:fixed;inset:0;z-index:-2;pointer-events:none;"></canvas>
+
+  <!-- ─── NAVIGATION ─── -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">NUVO</div>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#demo">Intelligence</a></li>
+      <li><a href="#manifesto">Philosophy</a></li>
+      <li><a href="#cta">Early Access</a></li>
+    </ul>
+    <button class="nav-cta magnetic-btn">Request Access</button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- ─── HERO SECTION ─── -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-canvas" id="heroCanvas"></div>
+
+    <div class="hero-badge">
+      <span class="hero-badge-dot"></span>
+      Emergent AI Platform
+    </div>
+
+    <h1>
+      The First AI That<br />
+      <span class="gradient-text">Evolves With You.</span>
+    </h1>
+
+    <p class="hero-sub">
+      Nuvo learns from every interaction, connects ideas across your life,
+      anticipates what matters next, and grows into your personal intelligence.
+    </p>
+
+    <div class="hero-actions">
+      <button class="btn-primary magnetic-btn">Experience Nuvo</button>
+      <button class="btn-secondary magnetic-btn">Watch Vision Film</button>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <span>Explore</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- ─── FEATURES SECTION ─── -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="section features" id="features">
+    <div class="features-header reveal">
+      <div class="section-label">
+        <span class="section-label-line"></span>
+        Capabilities
+      </div>
+      <h2 class="section-title">
+        Intelligence that<br />
+        <span class="gradient-text">never stops learning.</span>
+      </h2>
+      <p class="section-desc">
+        Six interconnected systems that work together to understand
+        you deeper with every interaction.
+      </p>
+    </div>
+
+    <div class="features-grid">
+      <!-- Card 1 -->
+      <div class="feature-card reveal reveal-delay-1" data-tilt>
+        <div class="feature-icon blue">🧠</div>
+        <h3>Emergent Intelligence</h3>
+        <p>Nuvo doesn't just respond — it develops understanding. Patterns emerge from your usage that no pre-programmed AI could replicate.</p>
+        <div class="feature-expand">Learn more →</div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="feature-card reveal reveal-delay-2" data-tilt>
+        <div class="feature-icon violet">∞</div>
+        <h3>Long-Term Memory</h3>
+        <p>Context that spans years, not conversations. Nuvo remembers your preferences, projects, relationships, and the nuances between them.</p>
+        <div class="feature-expand">Learn more →</div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="feature-card reveal reveal-delay-3" data-tilt>
+        <div class="feature-icon cyan">⚡</div>
+        <h3>Predictive Assistance</h3>
+        <p>Anticipate what you need before you ask. From scheduling to content recommendations — Nuvo surfaces the right thing at the right moment.</p>
+        <div class="feature-expand">Learn more →</div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="feature-card reveal reveal-delay-4" data-tilt>
+        <div class="feature-icon magenta">⟳</div>
+        <h3>Autonomous Workflows</h3>
+        <p>Delegate complex multi-step processes. Nuvo orchestrates tools, APIs, and services on your behalf — learning efficiency with each execution.</p>
+        <div class="feature-expand">Learn more →</div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="feature-card reveal reveal-delay-5" data-tilt>
+        <div class="feature-icon blue">🔗</div>
+        <h3>Cross-App Understanding</h3>
+        <p>Unified context across every tool you use. Email, calendar, documents, code — Nuvo sees the connections you miss.</p>
+        <div class="feature-expand">Learn more →</div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="feature-card reveal reveal-delay-1" data-tilt>
+        <div class="feature-icon violet">✦</div>
+        <h3>Adaptive Personality</h3>
+        <p>Communication that mirrors your style. Nuvo adjusts tone, detail level, and proactiveness based on who you are and what you need.</p>
+        <div class="feature-expand">Learn more →</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- ─── DEMO / INTELLIGENCE DASHBOARD ─── -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="section demo" id="demo">
+    <div class="demo-header reveal">
+      <div class="section-label">
+        <span class="section-label-line"></span>
+        Living Intelligence
+      </div>
+      <h2 class="section-title">
+        A mind that's<br />
+        <span class="gradient-text">always working.</span>
+      </h2>
+      <p class="section-desc">
+        Under the surface, Nuvo continuously processes, connects, and evolves
+        your personal knowledge graph.
+      </p>
+    </div>
+
+    <div class="demo-container reveal">
+      <div class="demo-glow"></div>
+      <div class="demo-grid">
+
+        <!-- Memory Graph -->
+        <div class="demo-panel">
+          <div class="demo-panel-header">
+            <span class="demo-panel-dot blue"></span>
+            Live Memory Graph
+          </div>
+          <div class="memory-nodes">
+            <span class="memory-node">Project Alpha</span>
+            <span class="memory-node">Q3 Strategy</span>
+            <span class="memory-node">Sarah's Feedback</span>
+            <span class="memory-node">Design System v4</span>
+            <span class="memory-node">Berlin Trip</span>
+            <span class="memory-node">API Architecture</span>
+            <span class="memory-node">ML Pipeline</span>
+            <span class="memory-node">Board Deck</span>
+            <span class="memory-node">React Patterns</span>
+            <span class="memory-node">Coffee Meetings</span>
+            <span class="memory-node">Fitness Goals</span>
+            <span class="memory-node">Book Notes</span>
+          </div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="demo-panel">
+          <div class="demo-panel-header">
+            <span class="demo-panel-dot cyan"></span>
+            Timeline of Learned Insights
+          </div>
+          <div class="timeline-items">
+            <div class="timeline-item">
+              <div class="timeline-dot-container">
+                <div class="timeline-dot"></div>
+                <div class="timeline-line"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-time">2 min ago</div>
+                <div class="timeline-text">Recognized recurring meeting pattern with design team</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot-container">
+                <div class="timeline-dot" style="background:var(--violet);box-shadow:0 0 6px var(--violet)"></div>
+                <div class="timeline-line"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-time">18 min ago</div>
+                <div class="timeline-text">Connected budget spreadsheet to Q3 strategy document</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot-container">
+                <div class="timeline-dot" style="background:var(--cyan);box-shadow:0 0 6px var(--cyan)"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-time">1 hour ago</div>
+                <div class="timeline-text">Learned preference: concise summaries before 9 AM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating AI Thoughts -->
+        <div class="demo-panel">
+          <div class="demo-panel-header">
+            <span class="demo-panel-dot violet"></span>
+            Floating AI Thoughts
+          </div>
+          <div class="ai-thoughts">
+            <div class="ai-thought">User tends to context-switch between design and engineering tasks — pre-loading both contexts</div>
+            <div class="ai-thought">Sarah mentioned a deadline shift in last email — should flag in next interaction</div>
+            <div class="ai-thought">Similar pattern detected: Berlin trip photos may be relevant to upcoming presentation</div>
+          </div>
+        </div>
+
+        <!-- Adaptive Recommendations -->
+        <div class="demo-panel">
+          <div class="demo-panel-header">
+            <span class="demo-panel-dot magenta"></span>
+            Adaptive Recommendations
+          </div>
+          <div class="recommendations">
+            <div class="rec-item">
+              <div class="rec-icon blue">📊</div>
+              <div class="rec-text"><strong>Review Q3 deck</strong> — 3 data points updated since last edit</div>
+            </div>
+            <div class="rec-item">
+              <div class="rec-icon violet">✉️</div>
+              <div class="rec-text"><strong>Draft reply to Sarah</strong> — detected urgency in tone</div>
+            </div>
+            <div class="rec-item">
+              <div class="rec-icon cyan">🎯</div>
+              <div class="rec-text"><strong>Focus block</strong> — optimal deep work window in 20 min</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Neural Activity -->
+      <div style="margin-top:1.5rem; display:flex; align-items:center; gap:1rem; padding:0 0.5rem;">
+        <div class="demo-panel-header" style="margin-bottom:0;">
+          <span class="demo-panel-dot blue"></span>
+          Neural Activity
+        </div>
+        <div class="neural-bars" id="neuralBars"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- ─── MANIFESTO ─── -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="manifesto" id="manifesto">
+    <div class="manifesto-glow"></div>
+    <p class="manifesto-text reveal">
+      We don't build tools that <em>answer questions.</em><br />
+      We build intelligence that <em>understands you.</em><br />
+      The difference is <em>everything.</em>
+    </p>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- ─── CTA SECTION ─── -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="cta-section" id="cta">
+    <h2 class="reveal">
+      Ready to meet your<br />
+      <span class="gradient-text">personal intelligence?</span>
+    </h2>
+    <p class="reveal reveal-delay-1">
+      Join the waitlist for early access. The future of AI isn't a chatbox — it's an evolution.
+    </p>
+    <div class="cta-input-group reveal reveal-delay-2">
+      <input type="email" class="cta-input" placeholder="Enter your email" />
+      <button class="btn-primary magnetic-btn">Join Waitlist</button>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- ─── FOOTER ─── -->
+  <!-- ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">NUVO</div>
+      <ul class="footer-links">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">GitHub</a></li>
+      </ul>
+      <div class="footer-copy">© 2026 Nuvo. The future is emergent.</div>
+    </div>
+  </footer>
+
+  <!-- ─── SCRIPTS ─── -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="main.js"></script>
+
+</body>
+</html>
