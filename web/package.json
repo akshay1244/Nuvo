@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "nuvo-web",
   "private": true,
@@ -18,3 +19,25 @@
     "vite": "^5.4.10"
   }
 }
+=======
+{
+  "name": "nuvo-web",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.10"
+  }
+}
+>>>>>>> 9c0505cfc5bc9955de9d3b63242791d835c527f8
